@@ -37,4 +37,5 @@ end
 def turn board, index, type
   input_to_index(index)
     move(board, index, type)
+    display_board(board)
 end
