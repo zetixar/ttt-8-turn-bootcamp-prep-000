@@ -28,7 +28,7 @@ end
 
 def move board, index, type = "X"
   board[index] = type
-  
+
 end
 
 def turn board, index, type
