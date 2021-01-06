@@ -6,8 +6,8 @@ def display_board board
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 def input_to_index index
-  index.to_i
-  index -= 1
+
+  index = (index.to_i - 1).to_s
 end
 
 def position_taken? board, index
