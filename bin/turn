@@ -14,3 +14,10 @@ until valid_move?(board, xmove)
   input_to_index(xmove)
 end
 turn(board, xmove, px)
+omove = gets.strip.to_i - 1
+input_to_index(omove)
+until valid_move?(board, omove)
+  omove = gets.strip.to_i - 1
+  input_to_index(omove)
+end
+turn(board, xmove, po)
