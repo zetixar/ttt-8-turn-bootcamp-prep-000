@@ -7,10 +7,10 @@ po = "O"
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
 
-xmove = gets.strip
+xmove = gets.strip.to_i
 input_to_index(xmove)
 until valid_move?(board, xmove)
-  xmove = gets.strip
+  xmove = gets.strip.to_i
   input_to_index(xmove)
 end
 turn(board, xmove, px)
