@@ -1,8 +1,11 @@
 #!/usr/bin/env ruby
-require_relative '../lib/turn.rb'
+require_relative '../lib/turn'
 board  = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-puts "Welcome to Tic-Tac-Toe"
 px = "X"
+po = "O"
+puts "Welcome to Tic Tac Toe!"
+display_board(board)
+
 xmove = gets.strip
 until valid_move?(board, xmove)
   xmove = gets.strip
