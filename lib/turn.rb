@@ -30,7 +30,7 @@ def valid_move? board, index
 end
 
 def move board, index, type = "X"
-  board[index] = type
+  board[index.to_i] = type
 
 end
 
